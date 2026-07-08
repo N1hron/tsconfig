@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    // Language and Environment
+    "target": "es2023",
+    "lib": ["ES2023"],
+    "jsx": "react-jsx",
+    "moduleDetection": "auto",
+
+    // Modules
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "resolveJsonModule": true,
+
+    // JavaScript Support
+    "checkJs": true,
+    "allowJs": true, // true if checkJs; false otherwise
+
+    // Completeness
+    "skipLibCheck": true,
+
+    // Type Checking
+    "strict": true,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+
+    // Interop Constraints
+    "erasableSyntaxOnly": true,
+    "forceConsistentCasingInFileNames": true,
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true, // true if verbatimModuleSyntax; false otherwise
+    "esModuleInterop": true, // true if module is node16, nodenext, or preserve; false otherwise
+
+    // Emit
+    "noEmit": false,
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true
+  }
+}

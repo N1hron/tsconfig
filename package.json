@@ -1,0 +1,25 @@
+{
+  "name": "@n1hron/tsconfig",
+  "version": "1.0.0",
+  "description": "Personal opinionated tsconfig presets",
+  "author": "N1hron",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/N1hron/tsconfig.git"
+  },
+  "files": [
+    "./tsconfig.*.json"
+  ],
+  "exports": {
+    "./base": "./tsconfig.base.json",
+    "./build": "./tsconfig.build.json",
+    "./node": "./tsconfig.node.json",
+    "./web": "./tsconfig.web.json",
+    "./webworker": "./tsconfig.webworker.json"
+  },
+  "scripts": {
+    "publish": "npm publish --access public"
+  }
+}
