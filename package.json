@@ -2,7 +2,10 @@
   "name": "@n1hron/tsconfig",
   "version": "2.0.0",
   "description": "Personal opinionated tsconfig presets",
-  "author": "N1hron",
+  "author": {
+    "name": "N1hron",
+    "email": "n1hron@yandex.com"
+  },
   "license": "MIT",
   "type": "module",
   "repository": {
