@@ -13,11 +13,11 @@
     "url": "git+https://github.com/N1hron/tsconfig.git"
   },
   "files": [
-    "./tsconfig.*.json"
+    "./tsconfig*.json"
   ],
   "exports": {
-    "./base": "./tsconfig.base.json",
-    "./build": "./tsconfig.build.json",
+    ".": "./tsconfig.json",
+    "./bundler": "./tsconfig.bundler.json",
     "./node": "./tsconfig.node.json",
     "./web": "./tsconfig.web.json",
     "./webworker": "./tsconfig.webworker.json"
