@@ -16,7 +16,7 @@
     "./tsconfig.*.json"
   ],
   "exports": {
-    "./base": "./tsconfig.json",
+    "./base": "./tsconfig.base.json",
     "./bundler": "./tsconfig.bundler.json",
     "./node": "./tsconfig.node.json",
     "./web": "./tsconfig.web.json",
