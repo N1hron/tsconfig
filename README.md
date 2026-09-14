@@ -2,7 +2,7 @@
 
 Personal, opinionated TypeScript config, shipped as composable presets.
 
-## Install
+## Installation
 
 ```sh
 npm install -D @n1hron/tsconfig typescript
@@ -14,32 +14,32 @@ Requires TypeScript 5.8+ (needed for the `erasableSyntaxOnly` option).
 
 None of the presets extend one another internally. This is intentional: it keeps every preset predictable and safe to combine in any order.
 
-The one rule that follows from that: always list the base config (`@n1hron/tsconfig`) first. Everything after it is optional and order-independent.
+The one rule that follows from that: always list the base config (`@n1hron/tsconfig/base`) first. Everything after it is optional and order-independent.
 
 ```jsonc
 // Plain Node.js / library project
 {
-  "extends": "@n1hron/tsconfig"
+  "extends": "@n1hron/tsconfig/base"
 }
 ```
 
 ```jsonc
 // Node.js project that wants @types/node globals
 {
-  "extends": ["@n1hron/tsconfig", "@n1hron/tsconfig/node"]
+  "extends": ["@n1hron/tsconfig/base", "@n1hron/tsconfig/node"]
 }
 ```
 
 ```jsonc
 // Browser app bundled by Vite / esbuild / webpack
 {
-  "extends": ["@n1hron/tsconfig", "@n1hron/tsconfig/bundler", "@n1hron/tsconfig/web"]
+  "extends": ["@n1hron/tsconfig/base", "@n1hron/tsconfig/bundler", "@n1hron/tsconfig/web"]
 }
 ```
 
 ```jsonc
 // Web Worker / Service Worker script, bundled
 {
-  "extends": ["@n1hron/tsconfig", "@n1hron/tsconfig/bundler", "@n1hron/tsconfig/webworker"]
+  "extends": ["@n1hron/tsconfig/base", "@n1hron/tsconfig/bundler", "@n1hron/tsconfig/webworker"]
 }
 ```
