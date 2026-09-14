@@ -13,7 +13,7 @@
     "url": "git+https://github.com/N1hron/tsconfig.git"
   },
   "files": [
-    "./tsconfig*.json"
+    "./tsconfig.*.json"
   ],
   "exports": {
     "./base": "./tsconfig.json",
